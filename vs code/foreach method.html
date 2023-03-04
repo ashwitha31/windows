@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foreach method</title>
+    <style>
+        .success{
+            border:3px dotted blue;
+        }
+        .error{
+            border:3px dotted brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi esse ipsum perspiciatis eaque et, tempora similique eius reprehenderit sed odit voluptatibus iusto ad autem quas?
+
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla maiores quas quam nobis. Minima velit dolores pariatur ut ipsum quos fugit, quo fuga doloribus optio officiis molestiae unde voluptate eum iste, inventore necessitatibus. Maxime id quaerat libero doloribus, earum vitae hic repellendus quod magni quas laborum porro odio aliquid.
+
+    </div>
+    <div class="a1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum rerum, unde impedit voluptatum consequuntur cupiditate, perferendis excepturi alias error perspiciatis ad quia assumenda consectetur? Error.
+
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt id repellendus itaque asperiores, quae voluptatem earum architecto odit nesciunt fugiat cumque magnam eius deleniti esse.
+
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, sapiente quam harum ut corporis odio enim, molestias eligendi sunt amet esse fugit dolorem eum quasi!
+
+    </div>
+    <script>
+        var m1=document.querySelectorAll("div");
+        m1.forEach(function(n){
+            n.classList.add("error");
+            n.classList.remove("a1");
+            n.style.margin="15px";
+        })
+    </script>
+</body>
+</html>
